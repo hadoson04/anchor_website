@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gallery | Anchor Resource Management & Trading Ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="container">
+    <div class="navbar">
+      <div class="brand">
+        <div class="brand-logo">
+          <img src="images/brand-logo.png" alt="Anchor Logo">
+        </div>
+        <div class="brand-text">
+          <span>ANCHOR</span>
+          <span>Resource Management & Trading Ltd</span>
+        </div>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+      </button>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="what-we-do.html">What We Do</a>
+        <a href="projects.html">Impact & Projects</a>
+        <a href="ecosystem.html">Ecosystem</a>
+        <a href="programmes.html">Programmes</a>
+        <a href="insights.html">Insights</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section class="gallery">
+  <h2>Gallery</h2>
+  <div class="coming-soon">
+    <h3>📸 Gallery Updates Loading...</h3>
+    <p>This section is currently being updated.</p>
+    <p>Please visit again soon.</p>
+  </div>
+</section>
+
+<style>
+.gallery {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.coming-soon {
+  background-color: #f4f4f4;
+  padding: 30px;
+  border-radius: 10px;
+}
+</style>
+
+<!-- ================= MAIN ================= --
+<main>
+
+  <!-- PAGE INTRO --
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Gallery</div>
+          <h1 class="section-title">Moments from the field</h1>
+          <p class="section-text">
+            A visual reflection of our programmes, partnerships,
+            project implementation and community impact.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY GRID --
+    <section class="section bg-light">
+      <div class="container">
+
+        <div class="gallery-grid">
+
+          <!-- IMAGE 1 --
+          <figure class="gallery-item">
+            <img src="images/gallery/img1.jpg" alt="Youth Bootcamp Session" onclick="openLightbox(this)">
+            <figcaption>Youth Bootcamp Leadership Session</figcaption>
+          </figure>
+
+          <!-- IMAGE 2 --
+          <figure class="gallery-item">
+            <img src="images/gallery/img2.jpg" alt="Women in STEM Workshop" onclick="openLightbox(this)">
+            <figcaption>Women & Girls in STEM Workshop</figcaption>
+          </figure>
+
+          <!-- IMAGE 3 --
+          <figure class="gallery-item">
+            <img src="images/gallery/img3.jpg" alt="Agribusiness Training" onclick="openLightbox(this)">
+            <figcaption>Agribusiness Capacity Building Training</figcaption>
+          </figure>
+
+          <!-- IMAGE 4 --
+          <figure class="gallery-item">
+            <img src="images/gallery/img4.jpg" alt="Health Campaign" onclick="openLightbox(this)">
+            <figcaption>NHIS & Community Health Outreach</figcaption>
+          </figure>
+
+          <!-- IMAGE 5 --
+          <figure class="gallery-item">
+            <img src="images/gallery/img5.jpg" alt="Trade Exhibition" onclick="openLightbox(this)">
+            <figcaption>Trade & Market Access Exhibition</figcaption>
+          </figure>
+
+          <!-- IMAGE 6 --
+          <figure class="gallery-item">
+            <img src="images/gallery/img6.jpg" alt="Stakeholder Engagement" onclick="openLightbox(this)">
+            <figcaption>Stakeholder & Partner Engagement</figcaption>
+          </figure>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX --
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="">
+  </div>
+
+<!-- ================= FOOTER ================= --
+<footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Anchor Resource Management & Trading Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+<script src="main.js"></script>
+<script>
+    function openLightbox(img) {
+      document.getElementById("lightbox-img").src = img.src;
+      document.getElementById("lightbox").style.display = "flex";
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
+</body>
+</html>
+
